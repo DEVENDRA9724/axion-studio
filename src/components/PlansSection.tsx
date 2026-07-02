@@ -75,8 +75,9 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onPlanClick }) => {
   return (
     <section 
       id="plans" 
-      className="py-20 sm:py-28 px-5 sm:px-8 lg:px-12 bg-[#F5F5F5] border-t border-gray-200 max-w-[1440px] mx-auto w-full relative overflow-hidden"
+      className="py-20 sm:py-28 bg-[#F5F5F5] border-t border-gray-200 w-full relative overflow-hidden"
     >
+      <div className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 lg:px-12">
       {/* Background glow decoration */}
       <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-[#F26522]/5 blur-[120px] pointer-events-none" />
 
@@ -184,6 +185,7 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onPlanClick }) => {
           })}
         </div>
 
+      </div>
       </div>
     </section>
   );

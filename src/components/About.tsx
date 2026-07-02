@@ -58,8 +58,9 @@ export const About: React.FC<AboutProps> = ({ onAboutClick }) => {
   return (
     <section 
       id="about" 
-      className="bg-white pt-16 sm:pt-20 lg:pt-32 pb-12 sm:pb-16 lg:pb-24 overflow-hidden max-w-[1440px] mx-auto w-full"
+      className="bg-white pt-16 sm:pt-20 lg:pt-32 pb-12 sm:pb-16 lg:pb-24 overflow-hidden w-full"
     >
+      <div className="max-w-[1440px] mx-auto w-full">
       {/* Badge Row */}
       <div className="px-5 sm:px-8 lg:px-12 flex items-center gap-3 mb-6 sm:mb-8">
         <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-gray-900 text-white text-[11px] sm:text-[12px] font-semibold flex items-center justify-center">
@@ -309,6 +310,7 @@ export const About: React.FC<AboutProps> = ({ onAboutClick }) => {
         </div>
       </div>
 
+      </div>
     </section>
   );
 };

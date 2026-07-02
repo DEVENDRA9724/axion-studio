@@ -96,8 +96,9 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onCtaClick }) => {
   return (
     <section 
       id="insights" 
-      className="py-20 sm:py-28 px-5 sm:px-8 lg:px-12 bg-white border-t border-gray-200 max-w-[1440px] mx-auto w-full relative"
+      className="py-20 sm:py-28 bg-white border-t border-gray-200 w-full relative"
     >
+      <div className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto w-full">
         
         {/* Header */}
@@ -268,6 +269,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onCtaClick }) => {
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 };

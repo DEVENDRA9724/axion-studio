@@ -50,8 +50,9 @@ export const Projects: React.FC = () => {
   return (
     <section 
       id="projects" 
-      className="bg-[#F5F5F5] pt-16 sm:pt-20 lg:pt-28 pb-16 sm:pb-20 lg:pb-28 max-w-[1440px] mx-auto w-full"
+      className="bg-[#F5F5F5] pt-16 sm:pt-20 lg:pt-28 pb-16 sm:pb-20 lg:pb-28 w-full"
     >
+      <div className="max-w-[1440px] mx-auto w-full">
       {/* Badge Row */}
       <div className="px-5 sm:px-8 lg:px-12 flex items-center gap-3 mb-6 sm:mb-8">
         <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-gray-900 text-white text-[11px] sm:text-[12px] font-semibold flex items-center justify-center">
@@ -237,6 +238,7 @@ export const Projects: React.FC = () => {
         </div>
       </div>
 
+      </div>
     </section>
   );
 };

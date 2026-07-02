@@ -30,8 +30,9 @@ export const StrategyCall: React.FC = () => {
   return (
     <section 
       id="contact" 
-      className="py-20 sm:py-28 px-5 sm:px-8 lg:px-12 bg-white border-t border-gray-200 max-w-[1440px] mx-auto w-full relative overflow-hidden"
+      className="py-20 sm:py-28 bg-white border-t border-gray-200 w-full relative overflow-hidden"
     >
+      <div className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 lg:px-12">
       {/* Decorative Background */}
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[#F26522]/5 blur-[150px] pointer-events-none" />
 
@@ -263,6 +264,7 @@ export const StrategyCall: React.FC = () => {
           </div>
           
         </div>
+      </div>
       </div>
     </section>
   );

@@ -116,8 +116,9 @@ export const GeologyExplorer: React.FC = () => {
   return (
     <section 
       id="methodology" 
-      className="py-20 sm:py-28 px-5 sm:px-8 lg:px-12 bg-white border-t border-gray-100 relative overflow-hidden max-w-[1440px] mx-auto w-full"
+      className="py-20 sm:py-28 bg-white border-t border-gray-100 relative overflow-hidden w-full"
     >
+      <div className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 lg:px-12">
       {/* Background glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#F26522]/5 blur-[120px] pointer-events-none" />
 
@@ -305,6 +306,7 @@ export const GeologyExplorer: React.FC = () => {
 
         </div>
 
+      </div>
       </div>
     </section>
   );
