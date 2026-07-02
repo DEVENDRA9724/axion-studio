@@ -155,6 +155,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
               <ArrowRight className="w-4 h-4" />
             </button>
 
+            {/* Direct Contact Profile */}
+            <div className="mt-2 pt-4 border-t border-gray-100 flex flex-col gap-1.5 text-xs text-gray-600">
+              <span className="font-semibold text-gray-900">Direct Contact:</span>
+              <div className="flex flex-col gap-0.5">
+                <a href="tel:+919327428481" className="hover:text-gray-900 transition-colors font-mono">+91 93274 28481</a>
+                <a href="https://www.instagram.com/nikki_tejwani/" target="_blank" rel="noreferrer" className="hover:text-gray-900 transition-colors text-[#F26522] font-medium">@nikki_tejwani</a>
+              </div>
+              <span className="text-[10px] text-gray-400 leading-normal mt-1 max-w-[280px]">
+                Block 701, Ananta Premium Living, Opposite German Venya Bunglows, Bhat, Ahmedabad, Gujarat 382428
+              </span>
+            </div>
+
           </div>
         </div>
       )}
