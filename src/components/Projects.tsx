@@ -136,7 +136,7 @@ export const Projects: React.FC = () => {
             </p>
           </div>
 
-          {/* Card 2: Luminar (SEO & Inbound) */}
+          {/* Card 2: Metomic (SEO & Inbound) */}
           <div className="flex flex-col">
             <div className="aspect-square rounded-2xl overflow-hidden bg-[#6b6b6b] relative group cursor-pointer shadow-sm">
               <video 
@@ -163,10 +163,10 @@ export const Projects: React.FC = () => {
             </div>
 
             <span className="text-[14px] sm:text-[15px] font-semibold text-gray-900 mt-4 px-1">
-              Luminar — Organic SEO Bedrock
+              Metomic — Organic SEO Bedrock
             </span>
             <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-1 px-1 max-w-md">
-              Compounding keyword authority and technical site speed upgrades, driving high-intent lead flow.
+              Compounding keyword authority and technical speed audits, boosting organic inbound signups by 210%.
             </p>
           </div>
 

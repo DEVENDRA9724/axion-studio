@@ -173,6 +173,44 @@ export const About: React.FC<AboutProps> = ({ onAboutClick }) => {
 
       </div>
 
+      {/* CLIENT RESULTS STATS BANNER */}
+      <div className="px-5 sm:px-8 lg:px-12 mt-16 sm:mt-24 lg:mt-28 w-full">
+        <div className="bg-[#F5F5F5] rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-200/60 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-mono text-[#F26522] tracking-tight block">
+              ₹4.5Cr+
+            </span>
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gray-500 mt-2 block">
+              Revenue Generated
+            </span>
+          </div>
+          <div>
+            <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-mono text-gray-900 tracking-tight block">
+              3.8x
+            </span>
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gray-500 mt-2 block">
+              Average ROAS
+            </span>
+          </div>
+          <div>
+            <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-mono text-gray-900 tracking-tight block">
+              250k+
+            </span>
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gray-500 mt-2 block">
+              Organic Clicks
+            </span>
+          </div>
+          <div>
+            <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-mono text-gray-900 tracking-tight block">
+              98.4%
+            </span>
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-gray-500 mt-2 block">
+              Client Retention
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* CORE SERVICES MATRIX CONTAINER */}
       <div 
         id="services" 
