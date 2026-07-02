@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
   }, []);
 
   const navLinks = [
-    { label: 'Projects', id: 'projects' },
+    { label: 'ROI Calculator', id: 'projects' },
     { label: 'Services', id: 'services' },
     { label: 'Methodology', id: 'methodology' },
     { label: 'Plans', id: 'plans' },
