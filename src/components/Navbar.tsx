@@ -29,8 +29,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
 
   const navLinks = [
     { label: 'Projects', id: 'projects' },
-    { label: 'Studio', id: 'about' },
-    { label: 'Journal', id: 'journal' },
+    { label: 'Services', id: 'services' },
+    { label: 'Methodology', id: 'methodology' },
+    { label: 'Plans', id: 'plans' },
+    { label: 'Insights', id: 'insights' },
     { label: 'Connect', id: 'contact' },
   ];
 
@@ -49,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
               AX
             </button>
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center gap-6 ml-2">
+            <div className="hidden lg:flex items-center gap-6 ml-2">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
@@ -66,8 +68,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
           <div className="flex items-center gap-4">
             
             {/* Desktop Details */}
-            <div className="hidden md:flex items-center gap-4 text-[13px] text-gray-600">
-              <span className="hidden lg:inline">Taking on projects for Q1 2026</span>
+            <div className="hidden lg:flex items-center gap-4 text-[13px] text-gray-600">
+              <span className="hidden xl:inline">Taking on projects for Q1 2026</span>
               <div className="flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
                 <Clock className="w-3.5 h-3.5 text-gray-500" />
                 <span className="font-mono">{londonTime} in London</span>
@@ -77,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
             {/* Desktop CTA Button */}
             <button
               onClick={onOpenBooking}
-              className="hidden md:flex items-center bg-gray-900 hover:bg-gray-800 text-white text-[13px] font-medium rounded-full pl-5 pr-2 py-2 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] group cursor-pointer"
+              className="hidden lg:flex items-center bg-gray-900 hover:bg-gray-800 text-white text-[13px] font-medium rounded-full pl-5 pr-2 py-2 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] group group cursor-pointer"
             >
               {/* Text roll container */}
               <div className="overflow-hidden h-[20px] relative pr-3">
@@ -95,7 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavClick, onOpenBooking }) => 
             {/* Mobile Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
+              className="lg:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <XIcon className="w-4 h-4" /> : <MenuIcon className="w-4 h-4" />}

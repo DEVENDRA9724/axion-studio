@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
+import { GeologyExplorer } from './components/GeologyExplorer';
 import { Projects } from './components/Projects';
+import { PlansSection } from './components/PlansSection';
+import { BlogSection } from './components/BlogSection';
+import { StrategyCall } from './components/StrategyCall';
 import { X, ArrowRight } from 'lucide-react';
 
 function App() {
@@ -53,12 +57,24 @@ function App() {
       {/* Section 2: About (White Background) */}
       <About onAboutClick={handleOpenBooking} />
 
+      {/* Interactive Simulator: Campaign Geology Strata */}
+      <GeologyExplorer />
+
       {/* Section 3: Case Studies (Light Gray Background) */}
       <Projects />
 
+      {/* Pricing Packages Section */}
+      <PlansSection onPlanClick={handleOpenBooking} />
+
+      {/* Insights Blog Section */}
+      <BlogSection onCtaClick={handleOpenBooking} />
+
+      {/* Connect Diagnostic Inquiries Booking Form */}
+      <StrategyCall />
+
       {/* Simple Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-6 text-center text-xs border-t border-gray-800">
-        <p>© 2026 Axion Studio. All rights reserved. Made for Q1 category dominance.</p>
+        <p>© 2026 Axion Studio. All rights reserved. Directed by Nikita Tejwani. Made for Q1 category dominance.</p>
       </footer>
 
       {/* Booking Modal Overlay */}
